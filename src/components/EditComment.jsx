@@ -31,7 +31,7 @@ const EditComment = ({ data, updateComment }) => {
         value={formData}
       />
 
-      <button>UPDATE</button>
+      <button aria-label="Update comment">UPDATE</button>
     </form>
   );
 };

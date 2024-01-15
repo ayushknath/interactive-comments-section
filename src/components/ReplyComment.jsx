@@ -27,7 +27,7 @@ const ReplyComment = ({ data, postReply }) => {
         value={formData}
       />
 
-      <button>REPLY</button>
+      <button aria-label="Send reply">REPLY</button>
     </form>
   );
 };

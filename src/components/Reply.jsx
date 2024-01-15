@@ -18,17 +18,29 @@ const Reply = ({
   const commentActions =
     currentUser === "juliusomo" ? (
       <div className="comment-actions">
-        <button className="comment-delete" onClick={() => deleteReply(data.id)}>
+        <button
+          className="comment-delete"
+          onClick={() => deleteReply(data.id)}
+          aria-label="Delete comment"
+        >
           <FaTrash />
           Delete
         </button>
-        <button className="comment-edit" onClick={() => setEditReply(true)}>
+        <button
+          className="comment-edit"
+          onClick={() => setEditReply(true)}
+          aria-label="Edit comment"
+        >
           <FaPen />
           Edit
         </button>
       </div>
     ) : (
-      <button className="comment-reply" onClick={() => setReplyToReply(true)}>
+      <button
+        className="comment-reply"
+        onClick={() => setReplyToReply(true)}
+        aria-label="Reply to comment"
+      >
         <FaReply />
         Reply
       </button>
@@ -42,13 +54,18 @@ const Reply = ({
         <>
           <div className="reply-box">
             <aside className="vote">
-              <button className="upvote" onClick={() => replyUpVote(data.id)}>
+              <button
+                className="upvote"
+                onClick={() => replyUpVote(data.id)}
+                aria-label="Upvote comment"
+              >
                 <FaPlus />
               </button>
               <span>{data.score}</span>
               <button
                 className="downvote"
                 onClick={() => replyDownVote(data.id)}
+                aria-label="Downvote comment"
               >
                 <FaMinus />
               </button>

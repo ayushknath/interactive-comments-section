@@ -28,7 +28,7 @@ const AddComment = ({ newComment }) => {
         value={formData}
       />
 
-      <button>SEND</button>
+      <button aria-label="Add new comment">SEND</button>
     </form>
   );
 };

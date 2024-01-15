@@ -28,17 +28,26 @@ const Comment = ({
         <button
           className="comment-delete"
           onClick={() => deleteComment(data.id)}
+          aria-label="Delete comment"
         >
           <FaTrash />
           Delete
         </button>
-        <button className="comment-edit" onClick={() => setEditComment(true)}>
+        <button
+          className="comment-edit"
+          onClick={() => setEditComment(true)}
+          aria-label="Edit comment"
+        >
           <FaPen />
           Edit
         </button>
       </div>
     ) : (
-      <button className="comment-reply" onClick={() => setReplyComment(true)}>
+      <button
+        className="comment-reply"
+        onClick={() => setReplyComment(true)}
+        aria-label="Reply to comment"
+      >
         <FaReply />
         Reply
       </button>
@@ -52,11 +61,19 @@ const Comment = ({
         <>
           <div className="comment-box">
             <aside className="vote">
-              <button className="upvote" onClick={() => upVote(data.id)}>
+              <button
+                className="upvote"
+                onClick={() => upVote(data.id)}
+                aria-label="Upvote comment"
+              >
                 <FaPlus />
               </button>
               <span>{data.score}</span>
-              <button className="downvote" onClick={() => downVote(data.id)}>
+              <button
+                className="downvote"
+                onClick={() => downVote(data.id)}
+                aria-label="Downvote comment"
+              >
                 <FaMinus />
               </button>
             </aside>
