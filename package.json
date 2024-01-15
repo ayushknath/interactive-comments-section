@@ -1,8 +1,8 @@
 {
   "name": "interactive-comments",
   "private": true,
-  "version": "0.0.0",
   "homepage": "https://ayushknath.github.io/interactive-comments-section/",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
